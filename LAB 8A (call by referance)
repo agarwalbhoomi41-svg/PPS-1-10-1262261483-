@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int changeRef(int *p) {  
+    *p = 180;            
+    return *p;           
+}
+int main() {
+    int b = 28;
+    changeRef(&b);       
+    printf("After Call by Reference, b = %d\n", b);
+    return 0;
+}
