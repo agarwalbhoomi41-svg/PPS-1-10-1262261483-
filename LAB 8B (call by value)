@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int change(int x) {    
+    x = 58;
+    return x;    
+     }
+int main() {
+    int a = 18;
+    change(a);         
+    printf("After Call by Value, a = %d\n", a);
+    return 0;
+}
